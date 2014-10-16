@@ -1,0 +1,21 @@
+<html>
+ <meta charset="UTF-8">
+   <h1> アップル製品の価格調査</h1>
+  <body>
+    <script type="text/javascript">
+      for (var i = 0; i < 5; i++) { 
+  var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
+
+       var price = [88800, 98800, 128800, 194800, 108800];
+        
+
+        if(price[i] < 100000) {
+          document.write(product[i] + "は" + price[i] + "円です。" + "１０万円以下"  + "<br>");
+        } else { 
+          document.write(product[i] + "は" + price[i] + "円です。" + "１０万円以上"  + "<br>");
+
+       }
+    }
+    </script>
+  </body>
+</html>
