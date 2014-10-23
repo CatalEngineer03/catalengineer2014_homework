@@ -1,21 +1,36 @@
 <html>
  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css">
    <h1> アップル製品の価格調査</h1>
   <body>
-    <script type="text/javascript">
-      for (var i = 0; i < 5; i++) { 
-  var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
+    <table class="table table-striped">
+      <tr>
+     <th>製品</th>
+     <th>価格</th>
+      </tr>
+  <script type="text/javascript">
+          var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
 
-       var price = [88800, 98800, 128800, 194800, 108800];
-        
+         var price = ["8万8000円", "9万8800円", "12万8800円", "19万4800円", "10万8800円"];
 
-        if(price[i] < 100000) {
-          document.write(product[i] + "は" + price[i] + "円です。" + "１０万円以下"  + "<br>");
-        } else { 
-          document.write(product[i] + "は" + price[i] + "円です。" + "１０万円以上"  + "<br>");
-
-       }
-    }
+           for (var i = 0; i < 5; i++) { 
+            document.write("<tr>" + "<td>" +  product[i] + "</td>" + "<td>" + price[i] + "</td>");  
+          }
     </script>
+   </table>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
   </body>
+   </link>
 </html>
