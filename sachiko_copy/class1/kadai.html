@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Homework</title>
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+  <script type="text/javascript" language="javascript">
+
+
+   function onButtonClick() {
+      selindex = document.form1.Select1.selectedIndex;
+      target = document.getElementById("output");
+      switch (selindex) {
+        case 0:
+          target.innerHTML = "88000円<br/>";
+          break;
+        case 1:
+          target.innerHTML = "98000円<br/>";
+          break;
+        case 2:
+          target.innerHTML = "128800円<br/>";
+          break;
+        case 3:
+          target.innerHTML = "194800円<br/>";
+          break;
+        case 4:
+          target.innerHTML = "108800円<br/>";
+          break;
+      }
+    }
+  </script>
+
+
+</head>
+<meta charset="UTF-8">
+<body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+
+<h1>アップル製品の価格調査</h1>
+
+<table class="table table-striped">
+
+<thead>
+<tr>
+<th>製品</th>
+<th>価格</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+
+<script type="text/javascript">
+
+var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
+var price = [8, 9, 12, 19, 10];
+
+for (var i = 0; i < 5; i++){
+      document.write("<tr>");
+      document.write("<td>" + product[i] + "</td>");
+      document.write("<td>" + price[i] + "万8800円" + "</td>");
+      document.write("</tr>");
+}
+
+</script>
+
+
+</tr>
+</tbody>
+
+</table>
+
+
+  <form name="form1" action="">
+<select style="width: 100%" id="Select1">
+
+
+        <script type="text/javascript">        
+var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
+      for (var i = 0; i < 5; i++){
+      document.write("<option>" + product[i] + "</option>");
+       } 
+        </script>      
+
+</select> 
+
+    <input class="btn btn-primary" type="button" value="料金表示" onclick="onButtonClick();" />
+  </form>
+   <h3><div id="output"></div>
+</h3>
+
+  </body>
+</html>
