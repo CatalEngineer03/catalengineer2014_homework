@@ -1,0 +1,53 @@
+<html>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <head>
+    <title>Homework</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <h1>アップル製品の価格調査</h1>
+    <script type="text/javascript">   
+      var product = ["MacBook Air 11inch", "MacBook Air 13inch", "MacBook Pro Retina 13inch", "MacBook Pro Retina 15inch", "iMac 21.5inch"];
+      var price = [88800, 98800, 128800, 194800, 108800];
+
+      for (var i = 0; i < 5; i++){
+        document.write(product[i]+"は"+price[i]+"円です。");
+      
+      if(price [i] < 100000)
+        document.write("１０万円以下"+"<br>");
+      else if (price [i] > 100000)
+        document.write("１０万円以上"+"<br>");
+      }
+    </script>
+  </body>
+=======
+=======
+>>>>>>> FETCH_HEAD
+    <head>
+      <title>This is the title</title>
+      <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="./bootstrap/js/bootstrap.min.js"></script>    
+      <h1>Hello World!</h1>
+      <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+          Action
+          <span class="caret"></span> 
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a>Action</a></li>
+          <li><a>Another Action</a></li>
+          <li><a>Some Other Action</a></li>
+          <li class="divider"></li>
+          <li><a>Separated</a></li>        
+        </ul>
+      </div>
+    </body>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+</html>
