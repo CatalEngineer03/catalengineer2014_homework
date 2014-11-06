@@ -1,0 +1,66 @@
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css">
+  </head>
+
+  <body>
+     <div class="container">
+     <h1> アップル製品の価格調査</h1>
+     <table class="table table-striped">
+      <tr>
+       <th>製品</th>
+       <th>価格</th>
+      </tr>
+
+       <script type="text/javascript">
+         var product = ["MacBook Air 11inch","MacBook Air 13inch","MacBook Pro Retina 13inch","MacBook Pro Retina 15inch", "iMac 21.5inch"];
+         var price = ["8万8800円" , "9万8800円" , "12万8800円" , "19万4800円" , "10万8800円" ];
+
+         for (var i = 0; i < 5; i++){
+         document.write("<tr>" + "<td>" + product[i] + "</td>" + "<td>" + price[i] + "</td>");        
+         } 
+
+         function onButtonClick() {
+           selindex = document.form1.Select1.selectedIndex;
+           target = document.getElementById("output");
+           switch (selindex) {
+            case 0:
+              target.innerHTML = "<h3>88,000円</h3><br/>";
+              break;
+            case 1:
+              target.innerHTML = "<h3>98,800円</h3><br/>";
+              break;
+            case 2:
+              target.innerHTML = "<h3>128,800円</h3><br/>";
+              break;
+            case 3:
+              target.innerHTML = "<h3>194,800円</h3><br/>";
+              break;
+            case 4:
+              target.innerHTML = "<h3>108,800円</h3><br/>";
+              break;
+           }
+         }  
+
+       </script>  
+      </table>
+       <form name="form1"  action="">
+          <select id="Select1"">
+             <option>MacBook Air 11inch</option>
+             <option>MacBook Air 13inch</option>
+             <option>MacBook Pro Retina 13inch</option>
+             <option>MacBook Pro Retina 15inch</option>
+             <option>iMac 21.5inc</option>
+          </select>
+      <br />
+　　  
+         <input class="btn btn-primary" type="button" value="料金表示" onclick="onButtonClick();" />
+       </form>
+      
+       <div id="output">
+       </div>
+   </body>
+    </link>
+</html>
