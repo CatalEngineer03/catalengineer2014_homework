@@ -1,0 +1,25 @@
+<h1>Listing Profiles</h1>
+
+<table>
+ <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Avatar</th>
+    <th></th>
+  </tr>
+ </thead>
+
+ <tbody>
+   <% @profile.each do |profile| %>
+     <tr>
+       <td><%= profile.id %></td>
+       <td><%= profile.Name %></td>
+       <td><%= profile.Avatar %></td>
+       <td><%= link_to 'Show', profile_path(profile.id) %></td>
+     </tr>
+   <% end %>
+ </tbody>
+</table>
+
+<%= link_to 'New', new_profile_path %>
