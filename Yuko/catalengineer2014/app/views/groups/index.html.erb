@@ -1,0 +1,27 @@
+<h1>Listing Groups</h1>
+
+<table>
+  <thread> 
+    <tr>
+     <th>name</th>
+    </tr>
+  </thead>
+
+<tbody>
+  <% @groups.each do |group| %>
+   <tr>
+    <td><%= group.title %></td>
+    <td><%= link_to 'Show', group_path(group.id) %></td>
+    <td><%= link_to 'Edit', edit_group_path(group) %></td>
+    <td><%= link_to 'Destroy', group, method: :delete, data:{ confirm:'本当に削除していいですか？'} %></td>
+   </tr>
+  <%end%>
+</tbody>
+</table>
+
+<%= link_to 'New Group', new_group_path %>
+
+<p>
+Signed in as yfujimoto210@gmail.com. 
+<%= link_to 'Sign out', 'http://www.gmail.com/' %>
+</p> 

@@ -2,7 +2,6 @@
  
  <%= form_for(@note) do |f| %>
     <h3><%= f.label :date %></h3>
-    <%# DateTime.now.strftime('%Y-%m-%d') %>
     <%= f.date_select :date %>
 
 

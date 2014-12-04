@@ -1,0 +1,18 @@
+Profile was successfully created.
+<br>
+<br>
+<b>Name:</b>
+<%= @profile.title %>
+<br>
+<br>
+<b>Avatar:</b>
+<%= @profile.body %>
+
+<br>
+<br>
+<%= link_to 'Edit', edit_profile_path %> | <%= link_to 'Back', new_profile_path %>
+<br>
+<p>
+Signed in as yfujimoto@gmail.com
+<%= link_to 'Sign out', 'http://www.gmail.com/' %>
+</p> 

@@ -1,14 +1,17 @@
-<h1>New group</h1>
+<h1>New Group</h1>
 
-<%= form_for(@note) do |f| %>
-   <h3><%= f.label :name %></h3>
+<%= form_for(@group) do |f| %>
+   <h3><%= f.label :name  %></h3>
    <%= f.text_field :title, class: "form-control"%>
-
-   <br>
+<br>
+<br>
    <%= f.submit "Create Group" %>
 
 <br>
-<a href="./">
-Back
-</a>
+<br>
+<%= link_to 'Back', groups_path %>
+<br>
+Signed in as yfujimoto210@gmail.com. 
+<%= link_to 'Sign out', 'http://www.gmail.com/' %>
+
 <% end %>

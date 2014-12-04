@@ -1,0 +1,19 @@
+<h1>New Profile</h1>
+
+<%= form_for(@profile) do |f| %>
+  <h3><%= f.label :name %></h3>
+  <%= f.text_field :title, class: "form-control"%>
+
+  <h3><%= f.label :avatar %></h3>
+  <%= f.text_field :body, class: "form-control"%>
+
+  <br>
+  <br>
+<%= f.submit "Create Profile" %>
+<br>
+<br>
+<%= link_to 'Back', new_group_path %>
+<br>
+Signed in as yfujimoto@gmail.com. 
+<%= link_to 'Sign out', 'http://www.gmail.com/' %>
+<% end %>
