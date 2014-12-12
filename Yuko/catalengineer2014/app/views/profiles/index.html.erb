@@ -13,12 +13,15 @@
       <tr>
        <td><%= profile.title %></td>
        <td><%= profile.body %></td>
-       <td><%=link_to 'Show', profile_path(profile.id) %></td>
+       <td><%= link_to 'Show', profile_path(profile.id) %></td>
+       <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+       <td><%= link_to 'Destroy', profile, method: :delete, data:{ confirm:'本当に削除していいですか？'} %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+<br>
 <%= link_to 'New Profile', new_profile_path %>
 <br>
-Signed in as yfujimoto210@gmail.com. 
+Signed in as yfujimoto210@gmail.com.
+<%= link_to 'Sign out', 'http://www.gmail.com/' %> 
